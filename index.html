@@ -9,10 +9,13 @@
         padding: 0px;
         margin: 0px;
         box-sizing: border-box;
-        font-size: 20px;
-      }
+        font-size: 16px;
+      } ::-webkit-scrollbar{
+          display: none;
+        }
       .container {
-        height: 100vh;
+        /* height: 50%; */
+       
         width: 100%;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -20,7 +23,7 @@
         justify-content: center;
         align-content: center;
         gap: 20px;
-        padding: 10%;
+        padding: 2%;
         background-color: #ecf2f8;
         grid-template-areas:
           "first first second third"
@@ -54,7 +57,9 @@
       .box {
         display: flex;
         flex-direction: column;
-        padding: 5%;
+        padding:15px;
+        /* width: 100%;
+        flex-wrap: wrap; */
         /* border: 2px solid red; */
         background-color: #7541c8;
         border-radius: 10px;
@@ -125,6 +130,9 @@
             "four five five";
         }
       }
+      /* .details{
+        max-width: 25%;
+      } */
     </style>
   </head>
   <body>
